@@ -8,10 +8,11 @@ Greenden is a responsive, clean, and simple plant store website built using **HT
 
 greenden-tailwind/
 │
-├── index.html # Homepage with intro, about, best sellers & reviews
-├── products.html # List of plant products
-├── contact.html # Contact form section
-└── Images/ # Contains all product and section images
+├── Images/              # All images used in the project
+├── README.md            # Project overview and instructions
+├── index.html           # Homepage
+├── products.html        # Product listing page
+├── tailwind.config.js   # Tailwind CSS configuration
 
 
 ---
@@ -19,7 +20,7 @@ greenden-tailwind/
 ## 🛠️ Technologies Used
 
 - **HTML5**
-- **Tailwind CSS v2.2.19**
+- **Tailwind CSS**
 - **Responsive Web Design**
 - **Mobile-first design**
 
