@@ -48,7 +48,7 @@ greenden-tailwind/
 ## 🚀 Getting Started
 
 🌐 Live Demo
-[Add GitHub Pages link here if deployed]
+(https://mrpanda0427.github.io/greenden-tailwind/)
 
 📩 Contact
 Developed by Vallarasan Anbu (Mr. Panda)
