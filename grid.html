@@ -1,0 +1,92 @@
+<style>
+    body {
+        background-color: aquamarine;
+        padding: 10px;
+        color: white;
+    }
+
+    .parent {
+        display: grid;
+        gap: 10px;
+        height: 100%;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+
+    .header {
+        background-color: blueviolet;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer {
+        background-color: blueviolet;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mittle {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 3fr;
+        
+    }
+
+    .mittle__child1 {
+        background-color: green;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mittle__child2 {
+        background-color: orange;
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr;
+        
+    }
+
+    .mittle__child2__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+    .mittle__child2 p{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .mittle__child2__images div {
+        background-color: yellow;
+        text-align: center;
+        margin: 10px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="mittle">
+            <div class="mittle__child1">Aside</div>
+            <div class="mittle__child2">
+                <div></div>
+                <p>Article</p>
+                <div class="mittle__child2__images">
+                    <div>image</div>
+                    <div>image</div>
+                    <div>image</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>

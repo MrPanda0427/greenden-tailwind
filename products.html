@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden Products</title>
+    <!--Tailwind CSS Link-->
+    <link href="
+       https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+       <script src="products.js" defer></script>
+</head>
+
+<body>
+    <!--Navebar-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-30">
+        <h1 class="text-2xl ">Greenden</h1>
+        <svg id="nav-Icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
+         24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-5 text-gray-600 hidden md:flex">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="products.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navbar -->
+    <section id="sideNav" class="fixed z-40 w-1/4 top-0 h-screen transition-all duration-700" style="right:-50%;">
+        <nav class="bg-green-100 p-3 h-full">
+            <!-- Close Button -->
+            <div class="text-right ">
+                <p id="closeBtn" class="inline cursor-pointer font-bold text-red-500 hover:text-red-800">X</p>
+            </div>
+
+
+            <ul class="gap-5 text-gray-600 flex flex-col items-center">
+                <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+                <li><a class="hover:underline hover:text-black" href="products.html">Products</a></li>
+                <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!--Heading & Search-->
+    <section class="flex flex-col justify-center items-center text-center mt-5">
+        <h1 class="text-3xl font-bold">Our Products</h1>
+        <input id="search" type="text" placeholder="Search for a product..." class="rounded-lg border border-black p-1 md:p-2 mt-3"
+            style="width: 80%;">
+    </section>
+
+    <!--Products-->
+    <section class="px-5 mb-5">
+        <div id="productContainer" class="grid grid-cols-2 md:grid-cols-4 gap-5 justify-between mt-5 md:mt-10 text-center">
+            <div>
+                <img src="./Images/Boxwood Topiary.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <p>Boxwood Topiary</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/Mammillaria Cactus.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <p>Mammillaria Cactous</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/Fiddle Leaf Fig.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <p>Fiddle Leaf Fig</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/Parlor Palm.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <p>Parlor Palm</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/Chinese Money Plant.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                <p>Chinese Money Plant</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/red tupil.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                <p>Red Tupil</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/ZZ Plant.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                <p>ZZ Plant</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./Images/Aloe Vera.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                <p>Aloe Vera</p>
+                <p>$20</p>
+            </div>
+
+            <!-- <div>
+                <img src="./Images/money pant.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>plant 1</h1>
+                <p>$20</p>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="bg-green-100 p-5">
+        <h1 class="text-3xl font-bold mt-5">Greenden</h1>
+        <p class="mt-3">The Standard chunk of Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum
+            laboriosam quo
+            nulla excepturi voluptas voluptates iusto rem id placeat.
+        </p>
+        <p class="mt-3">@ 2025 Greenden.com</p>
+
+    </section>
+
+    <!-- Overlay -->
+<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-0 z-30 transition-all duration-300 pointer-events-none "></div>
+
+</body>
+
+</html>
